@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/366e86972c.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Roboto&display=swap" rel="stylesheet">
   <title>FCC landing page project</title>
 </head>
 
@@ -12,27 +15,113 @@
 
   <header id="header">
 
-<!-- logo -->
-    <img src="#" alt="who knows" id="header-img">
+    <!-- navbar -->
 
-<!-- navbar -->
+
     <nav id="nav-bar">
+
+      <a href="#header" ><img id="header-img" src="https://lh3.googleusercontent.com/aDDlmQltsIFVh5Fhj8g310Dd0UANuL06_GseQTxyXt9uEEMYR039cgSqLMx_M330SXDiLysBfAqlvwtP8xR6SrKxx4EYHhUirA-OTFKr9lXJwdrPoAubScdorfJGhLAlwUvvPqcfcAI=w2400" alt="logo"></a>
+
       <ul>
-        <li><a href="#" class="nav-link">Lorem.</a></li>
-        <li><a href="#" class="nav-link">Lorem ipsum.</a></li>
-        <li><a href="#" class="nav-link">Lorem.</a></li>
+      <li><a href="#container1" class="nav-link">Why us?</a></li>
+        <li><a href="#video" class="nav-link">Media</a></li>
+        <li><a href="#container2" class="nav-link">Options</a></li>
       </ul>
     </nav>
 
+    <!-- Form and Button -->
+    <form action="#" id="form">
+      <h2>Join us today!</h2>
+      <input name="email" type="email" id="email" placeholder="Enter your email to get started">
+      <input type="submit" id="submit">
+    </form>
+
   </header>
 
-<!-- video player -->
-  <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  <!-- container with selling points  -->
+  <div id="container1">
 
-<<form action="#" id="form">
-    <input type="submit" id="submit">
-    <input name="email" type="email" id="email">
-</form>
+    <div class="selling-points">
+      <div class="icon"><i class="fa fa-3x fa-chalkboard-teacher"></i></div>
+      <div class="description">
+        <h3 class="sell-header">Our Teachers</h3>
+        <p>Fully qualified english mother tongue teachers dedicated to teaching you English.</p>
+      </div>
+    </div>
+
+
+    <div class="selling-points">
+      <div class="icon"><i class="fa fa-3x fa-calendar-alt"></i></div>
+      <div class="description">
+        <h3 class="sell-header">Flexibility</h3>
+        <p>Group and individual lesson plans tailored to suit your needs.</p>
+      </div>
+    </div>
+
+    <div class="selling-points">
+
+      <div class="icon"><i class="fa fa-3x fa-laptop"></i></div>
+      <div class="description">
+        <h3 class="sell-header">Facilities</h3>
+        <p>State of the art modern school with access to a wide range of excellent learning materials and facilitites.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- video player -->
+<div id="video-container">
+  <iframe id="video" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+
+  <!-- container with options -->
+<h2 id="options">Take your pick</h2>
+
+  <div id="container2">
+    <div class="boxes">
+      <h3 class="box-header">Intesive Course</h3>
+      <h3>$800</h3>
+      <ul class="box-li">
+        <li>Lorem ipsum.</li>
+        <li>Lorem.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum dolor.</li>
+      </ul>
+      <button class="btn">Select</button>
+    </div>
+
+    <div class="boxes">
+      <h3 class="box-header">Full-time</h3>
+      <h3>$100</h3>
+      <ul class="box-li">
+        <li>Lorem ipsum.</li>
+        <li>Lorem.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum dolor.</li>
+      </ul>
+      <button class="btn">Select</button>
+    </div>
+
+    <div class="boxes">
+      <h3 class="box-header">Part-time</h3>
+      <h3>$1500</h3>
+      <ul class="box-li">
+        <li>Lorem ipsum.</li>
+        <li>Lorem.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum dolor.</li>
+      </ul>
+      <button class="btn">Select</button>
+    </div>
+
+  </div>
+
+  <!-- footer -->
+
+  <footer id="footer">
+    Wes Banyard
+  </footer>
 
 </body>
 
